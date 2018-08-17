@@ -2,7 +2,7 @@
 
 This is a simple script I wrote to install my other simple scripts. Hope you'll find some of them usefull
 
-### BDSM  (Bash Database SQL Manager)
+### 💋 BDSM  (Bash Database SQL Manager)
 
 Smart script to do various things with your database.
 Script description: https://github.com/michaelradionov/bdsm
@@ -11,7 +11,7 @@ Script description: https://github.com/michaelradionov/bdsm
 eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/master/gg_installer.sh")" && gg_installer bdsm
 ```
 
-### Git Aliases
+###  Git Aliases
 
 Usefull Git aliases.
 Script description: https://github.com/michaelradionov/git-alias
