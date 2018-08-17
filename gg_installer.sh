@@ -66,6 +66,9 @@ case $SCRIPT_NAME in
   'gg_aliases_1X')
   SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/git-alias/master/aliases_git1.sh'
   ;;
+  'hello_bash')
+  SCRIPT_URL='https://github.com/michaelradionov/helloBash/blob/master/helloBash.sh'
+  ;;
   *)
     echo -e "${L_RED}Can't find script with name ${SCRIPT_NAME}${NC}"
     return
@@ -76,7 +79,9 @@ esac
 # Install script!
 #################################################
 
+echo
 echo "Installing ${SCRIPT_NAME} script..."
+echo
 
 # creating scripts directory if doesn't exists
 if [ ! -d  $SCRIPTS_FOLDER ]; then
