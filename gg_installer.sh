@@ -103,9 +103,9 @@ else
 
   echo -e "Adding sourcing line at the end of your ${WHITE}.bashrc${NC}"
   echo '' >> ~/.bashrc
-  echo "### ${SCRIPT_NAME} START" >> ~/.bashrc
+  echo "### GO GIT TOOLS START" >> ~/.bashrc
   echo "${INSTALL_SCRIPT}" >> ~/.bashrc
-  echo "### ${SCRIPT_NAME} END" >> ~/.bashrc
+  echo "### GO GIT TOOLS START" >> ~/.bashrc
   echo '' >> ~/.bashrc
   check_command_exec_status $?
 fi
