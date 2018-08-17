@@ -11,7 +11,7 @@ Script description: https://github.com/michaelradionov/bdsm
 eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/master/gg_installer.sh")" && gg_installer bdsm
 ```
 
-###  Git Aliases
+### 🎭 Git Aliases
 
 Usefull Git aliases.
 Script description: https://github.com/michaelradionov/git-alias
@@ -20,6 +20,15 @@ Script description: https://github.com/michaelradionov/git-alias
 eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/master/gg_installer.sh")" && gg_installer gg_aliases
 ```
 
+### 👋 Hello Bash
+
+Bash prompt generator with Git support
+
+Script description: https://github.com/michaelradionov/helloBash
+
+```shell
+eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/master/gg_installer.sh")" && gg_installer hello_bash
+```
 
 
 # Features
