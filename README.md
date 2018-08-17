@@ -33,7 +33,10 @@ eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/mas
 
 # Features
 
+- It works on Windows, Mac and Linux in Bash supporting terminals
 - It backups your old `.bashrc` to something like `.bashrc.backup_2018-08-17`
+- It writing single line of code in your `~/.bashrc` for all GG scripts
+- This line is first checking foк scripts existence and only then sourcing them. So it will never break anything
 
 ## Requirements
 
