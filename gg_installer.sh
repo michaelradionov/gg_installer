@@ -67,7 +67,7 @@ case $SCRIPT_NAME in
   SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/git-alias/master/aliases_git1.sh'
   ;;
   'hello_bash')
-  SCRIPT_URL='https://github.com/michaelradionov/helloBash/blob/master/helloBash.sh'
+  SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/helloBash/master/helloBash.sh'
   ;;
   *)
     echo -e "${L_RED}Can't find script with name ${SCRIPT_NAME}${NC}"
