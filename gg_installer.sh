@@ -1,7 +1,7 @@
 #!/bin/bash
 # set -e
 
-installer(){
+gg_installer(){
 
 
   # Colors
