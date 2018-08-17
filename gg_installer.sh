@@ -3,6 +3,14 @@
 
 gg_installer(){
 
+  ################################################
+  # Preparings
+  #################################################
+
+  # Some important variables
+  SCRIPTS_FOLDER=~/.gg_tools
+  INSTALL_SCRIPT="for f in ${SCRIPTS_FOLDER}/*; do source "'$f'"; done"
+  SCRIPT_NAME=$1
 
   # Colors
 L_RED='\033[1;31m'
@@ -13,11 +21,50 @@ D_GREY='\033[1;30m'
 D_VIOL='\033[1;34m'
 NC='\033[0m'
 
+# Check if previous command return succes result
+check_command_exec_status () {
+  if [ $1 -eq 0 ];then
+    echo -e "${YELLOW}Success!${NC}"
+    echo
+  else
+    echo -e "${L_RED}ERROR${NC}"
+    echo
+  fi
+}
+
+# This is for GG aliases
+if [ $SCRIPT_NAME -eq 'gg_aliases' ];then
+  # Let's check installed Git version
+  GIT_VERSION=`git --version | grep -o -E '[0-9]+' | head -1`
+  case $GIT_VERSION in
+    1)
+    SCRIPT_NAME='gg_aliases_1X'
+    echo 'You have Git 1.X. That is fine but I would suggest you to upgrade it'
+    ;;
+    2)
+    echo 'You have Git 2.X. Nice!'
+    ;;
+    *)
+    echo 'Can not detect Git version. Exiting'
+    return
+    ;;
+  esac
+fi
+
+
+################################################
 # What script do we want to install?
-SCRIPT_NAME=$1
+#################################################
+
 case $SCRIPT_NAME in
   'bdsm')
     SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/bdsm/master/bdsm.sh'
+  ;;
+  'gg_aliases')
+  SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/git-alias/master/aliases_git2.sh'
+  ;;
+  'gg_aliases_1X')
+  SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/git-alias/master/aliases_git1.sh'
   ;;
   *)
     echo -e "${L_RED}Can't find script with name ${SCRIPT_NAME}${NC}"
@@ -25,21 +72,9 @@ case $SCRIPT_NAME in
   ;;
 esac
 
-# Some important variables
-SCRIPTS_FOLDER=~/.gg_tools
-INSTALL_SCRIPT="for f in ${SCRIPTS_FOLDER}/*; do source "'$f'"; done"
-
-# Check if previous command return succes result
-
-check_command_exec_status () {
-  if [ $1 -eq 0 ];then
-      echo -e "${YELLOW}Success!${NC}"
-      echo
-  else
-    echo -e "${L_RED}ERROR${NC}"
-    echo
-  fi
-}
+################################################
+# Install script!
+#################################################
 
 echo "Installing ${SCRIPT_NAME} script..."
 
