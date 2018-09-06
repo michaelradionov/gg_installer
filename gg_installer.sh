@@ -69,6 +69,9 @@ case $SCRIPT_NAME in
   'hello_bash')
   SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/helloBash/master/helloBash.sh'
   ;;
+  'docker_aliases')
+  SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/docker_aliases/master/docker_aliases.sh'
+  ;;
   *)
     echo -e "${L_RED}Can't find script with name ${SCRIPT_NAME}${NC}"
     return
