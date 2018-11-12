@@ -72,6 +72,15 @@ case $SCRIPT_NAME in
   'docker_aliases')
   SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/git-alias/master/docker_aliases.sh'
   ;;
+  'laravel_aliases')
+  SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/git-alias/master/laravel_aliases.sh'
+  ;;
+  'jira_aliases')
+  SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/git-alias/master/jira_aliases.sh'
+  ;;
+  'random_aliases')
+  SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/git-alias/master/random_aliases.sh'
+  ;;
   *)
     echo -e "${L_RED}Can't find script with name ${SCRIPT_NAME}${NC}"
     return
