@@ -60,6 +60,9 @@ case $SCRIPT_NAME in
   'bdsm')
     SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/bdsm/master/bdsm.sh'
   ;;
+  'bdsm_nightly')
+    SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/bdsm/develop/bdsm.sh'
+  ;;
   'gg_aliases')
   SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/git-alias/master/aliases_git2.sh'
   ;;
