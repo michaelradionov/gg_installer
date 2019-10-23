@@ -16,8 +16,16 @@ eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/mas
 Usefull Git aliases.
 Script description: https://github.com/michaelradionov/git-alias
 
+For Git v2+
+
 ```shell
 eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/master/gg_installer.sh")" && gg_installer gg_aliases
+```
+
+For Git v1.X
+
+```shell
+eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/master/gg_installer.sh")" && gg_installer gg_aliases_1X
 ```
 
 ### 👋 Hello Bash
