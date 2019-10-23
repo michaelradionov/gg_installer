@@ -7,9 +7,20 @@ This is a simple script I wrote to install my other simple scripts. Hope you'll 
 Smart script to do various things with your database.
 Script description: https://github.com/michaelradionov/bdsm
 
+Stable sersion
+
 ```shell
 eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/master/gg_installer.sh")" && gg_installer bdsm
 ```
+
+Nightly version
+
+
+```shell
+eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/master/gg_installer.sh")" && gg_installer bdsm_nightly
+```
+
+
 
 ### 🎭 Git Aliases
 
