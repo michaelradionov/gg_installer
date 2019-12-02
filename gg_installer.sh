@@ -84,6 +84,9 @@ case $SCRIPT_NAME in
   'random_aliases')
   SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/git-alias/master/random_aliases.sh'
   ;;
+  'brancher')
+  SCRIPT_URL='https://raw.githubusercontent.com/Flagstudio/brancher/master/brancher.sh'
+  ;;
   *)
     echo -e "${L_RED}Can't find script with name ${SCRIPT_NAME}${NC}"
     return
