@@ -49,6 +49,16 @@ Script description: https://github.com/michaelradionov/helloBash
 eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/master/gg_installer.sh")" && gg_installer hello_bash
 ```
 
+### Brancher
+
+Our branch switcher little script
+
+Script description: https://github.com/Flagstudio/brancher
+
+```shell
+eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/master/gg_installer.sh")" && gg_installer brancher
+```
+
 
 # Features
 
