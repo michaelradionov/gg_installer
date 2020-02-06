@@ -87,6 +87,9 @@ case $SCRIPT_NAME in
   'brancher')
   SCRIPT_URL='https://raw.githubusercontent.com/Flagstudio/brancher/master/brancher.sh'
   ;;
+  'dfh')
+  SCRIPT_URL='https://raw.githubusercontent.com/michaelradionov/dfh/master/dfh.sh'
+  ;;
   *)
     echo -e "${L_RED}Can't find script with name ${SCRIPT_NAME}${NC}"
     return
