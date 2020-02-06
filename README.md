@@ -49,6 +49,18 @@ Script description: https://github.com/michaelradionov/helloBash
 eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/master/gg_installer.sh")" && gg_installer hello_bash
 ```
 
+### DFH
+
+`df -h` with Cron and Slack
+
+Script description: https://github.com/michaelradionov/dfh
+
+
+```shell
+eval "$(curl "https://raw.githubusercontent.com/michaelradionov/gg_installer/master/gg_installer.sh")" && gg_installer dfh
+```
+
+
 ### Brancher
 
 Our branch switcher little script
